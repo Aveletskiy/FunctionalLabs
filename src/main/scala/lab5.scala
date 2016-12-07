@@ -46,7 +46,7 @@ object lab5 {
     def closureListGen(length: Int, acc: List[Int]): List[Int] = {
       if (length == 0) acc
       else {
-        val element = z + (r.nextInt() % 5)
+        val element = z + (r.nextInt() % 6)
         closureListGen(length - 1, element :: acc)
       }
     }
